@@ -1,0 +1,223 @@
+body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+	background-color: #34495e;
+	font-family: sans-serif;
+}
+table{
+	margin: 0 auto;
+	border-collapse: collapse;
+	min-width: 320px;
+}
+td{
+	text-align: left;
+}
+th{
+	width: 10%;
+	text-align: center;
+	padding: 1em;
+	background-color: #0f3f4f;
+	color: #fff;
+}
+tr{
+	height: 0.5em;
+	border: 1px solid #0f3f4f;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+table tr:nth-child(even){
+	/*background-color: #bdc3c7;*/
+}
+table tr:nth-child(odd){
+	/*background-color: #ecf0f1;*/
+}
+table tr:hover{
+	background-color: #bdc3c7;
+}
+input[type='text'],input[type='tel'],input[type='email'],textarea, input[type='password'], input[type='date'], input[type='number'], select{
+	width: 200px;
+	border: 0px solid #CCC;
+	padding: 8px;
+	margin: 4px;
+	border-bottom: 2px solid #000;
+}
+input[type='text']:hover,input[type='tel']:hover,input[type='email']:hover,textarea:hover, input[type='password']:hover, input[type='date']:hover, input[type='number']:hover, select:hover{
+	border-bottom: 2px solid #3f4f97;
+}
+input[type='button']{
+	min-width: 76px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: inherit;
+	border: 1px solid #3f4f97;
+	color: #000;
+	text-align: center;
+	display: inline-block;
+	margin: 4px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+input[type='button']:hover{
+	background-color:#3f4f97;
+	color:#fff;
+}
+.kotak{
+	width: 100%;
+	text-align:right;
+}
+#cont{
+	padding-bottom: 18px;
+	min-height: 100%;
+	position: relative;
+}
+#notif{
+	padding: 8px 32px;
+  border-radius: 4px;
+  background-color: #3498db;
+	color: #fff;
+  width: 960px;
+	font-size: 16px;
+	margin: 32px auto;
+	min-height: 32px;
+	overflow-x:auto;
+}
+#close{
+	border-radius: 100%;
+	border: 1px solid #fff;
+	cursor: pointer;
+	float: right;
+	width: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+#txtnotif{
+	line-height: 32px;
+	float: left;
+}
+#form{
+	min-height: 480px;
+	box-shadow: 1px 1px 5px #CCC;
+	border-radius: 4px;
+	padding: 32px;
+	width: 960px;
+	background-color: #fff;
+	margin: 32px auto;
+	overflow-x:auto;
+	text-align:center;
+	font-size: 32px;
+	font-weight: bold;
+	color: #7f8c8d;
+}
+#header{
+	font-weight: bold;
+	color: #fff;
+	padding:16px;
+	font-size: 32px;
+	background-color: #2c3e50;
+	text-align: center;
+}
+#footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	padding: 4px 0;
+	font-size: 12px;
+	background-color: #000;
+	text-align: center;
+}
+.border{
+	border: 0;
+}
+.txthead{
+	cursor: pointer;
+	overflow-x:auto;
+	width:100%;
+}
+.kotable{
+	overflow-y:auto;
+	height:480px;
+	overflow-x:
+	auto;width:100%
+}
+.k2{
+	cursor: pointer;
+	border-radius: 16px;
+	float: left;
+	margin: 5% 5% 0 5%;
+	width: 40%;
+	height: 240px;
+	background-color: #3498db;
+	color:#fff;
+}
+.k2logo{
+	font-size: 164px;
+	padding: 8px;
+	background-color: #2980b9;
+}
+.k2txt{
+	font-size: 12px;
+	padding: 12px;
+}
+.txttit{
+	text-align: left;
+	margin: auto;
+	width: 100%;
+	float: left;
+}
+.txtadd{
+	float: right;
+}
+@media (max-width: 1024px) {
+  #form{
+    width: 688px;
+		padding:16px;
+  }
+  #notif{
+		width:688px;
+		padding:4px 16px;
+  }
+}
+@media (max-width: 720px) {
+  #form{
+    width: 95%;
+		padding:16px 2.5%;
+  }
+  #notif{
+		width:95%;
+		padding:0 2.5%;
+  }
+  .kotak{
+		width: 100%;
+  }
+}
+@media (max-width: 480px) {
+	#header{
+		z-index: 37;
+		text-align: left;
+		margin-top: -99px;
+		width: 100%;
+		position: fixed;
+	}
+	#notif{
+		margin-bottom: -19px;
+  }
+	#form{
+		margin-top: 99px;
+		font-size: 24px;
+  }
+  #notif{
+		margin-top: 80px;
+		margin-bottom: -48px;
+  }
+	.k2{
+		width: 90%;
+		margin: 5% 5%;
+	}
+	.txthead{
+		font-size: 24px;
+	}
+}
